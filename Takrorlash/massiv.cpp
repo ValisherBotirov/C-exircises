@@ -31,7 +31,8 @@ for(int i = 0; i < (n + 1) / 2; i++)
 }
 	else 
 	{
-		cout << a[q] << " ";
+		cout << a[q] << " "
+		;
 		if(p != q)
 		cout << a[q - 1] << " ";
 		q = q - 2;
