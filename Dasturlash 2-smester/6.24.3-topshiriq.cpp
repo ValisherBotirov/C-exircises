@@ -16,18 +16,12 @@ int main(){
 	size_t start = 0;
 	size_t lengths[] = { 2, 5 };
 	size_t strides[] = { 4, 4 };
-
-	
 		gslice func(
 		start, valarray<size_t>(lengths, 2),
 		valarray<size_t>(strides, 2));
-	
-	valarray<int> data = arr[func];
-
-	cout << "Results : \n";
-
-	
-	for (int i = 0; i < data.size(); i++)
+		valarray<int> data = arr[func];
+		cout << "Results : \n";
+		for (int i = 0; i < data.size(); i++)
 		cout << data[i] << " ";
 		cout << "\n";
 
